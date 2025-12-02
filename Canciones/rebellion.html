@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REBELLION</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/R1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: rgb(121, 8, 0);
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>REBELLION</h1>
+
+    <video width="560" controls>
+        <source src="../Videos/Rebellion.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+    <p> La canción 'リベリオン (Rebellion)' de Ado es un poderoso himno de
+        resistencia y autoafirmación. Desde el primer verso, Ado expresa
+        un profundo descontento con las críticas y los insultos que ha recibido,
+        describiendo cómo estos comentarios negativos giran en su mente como
+        un groove perturbador. La palabra 'リベリオン' (Rebellion) se convierte
+        en un símbolo de su lucha interna y su deseo de liberarse de las
+        expectativas y normas impuestas por la sociedad.
+    </p>   
+    <p> A lo largo de la canción, Ado utiliza metáforas y un lenguaje enérgico
+        para transmitir su determinación de romper con las convenciones.
+        Frases como '狂い散らかして今 dive' y '忌々しさに boom!' reflejan su
+        deseo de sumergirse en la locura y la frustración para encontrar su
+        propia voz. La repetición de 'Check it out out!' y 'Shake it out out!'
+        sirve como un llamado a la acción, instando a los oyentes a desafiar las
+        adversidades y a creer en su propio poder para provocar un cambio.
+    </p>    
+    <p>El estribillo 'This is the time of rebellion' refuerza el mensaje central
+        de la canción: este es el momento de la rebelión. Ado se presenta como un
+        prisionero de las normas sociales, pero también como alguien dispuesto a
+        romper esas cadenas y a luchar por su libertad. La canción culmina con una
+        declaración de libertad absoluta, '底抜けのフリーダムを', que encapsula su
+        deseo de vivir sin restricciones y de seguir adelante sin ser retenida por
+        nadie. En resumen, 'リベリオン (Rebellion)' es una declaración audaz de
+        independencia y resistencia, un llamado a todos aquellos que se sienten
+        oprimidos a levantarse y luchar por su propia libertad.
+    </p>
+    </div>
+
+</body>
+
+</html>

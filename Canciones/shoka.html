@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SHOKA</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/S11.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: rgb(94, 0, 0);
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SHOKA</h1>
+    
+    <video width="560" controls>
+        <source src="../Videos/Shoka.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+    <p> La canción '初夏 (shoka)' de Ado es una profunda exploración de la desesperación
+        y la búsqueda de sentido en medio de la angustia emocional. La letra comienza
+        con una declaración contundente sobre la inutilidad de aferrarse a la idea de la
+        muerte ('死にたい死にたいって縋ってたって何にも意味ないな'). Esta línea establece el
+        tono de la canción, que se centra en la lucha interna del narrador contra
+        sentimientos de desesperanza y la búsqueda de respuestas en un mundo que parece
+        carecer de sentido.
+    </p>
+        
+    <p> A lo largo de la canción, Ado utiliza metáforas y simbolismos para expresar la
+        complejidad de estas emociones. Por ejemplo, la referencia a '初夏の風'
+        (viento de principios de verano) sugiere una sensación de efímera belleza y
+        transitoriedad, mientras que la imagen de '美しく枯れる都会の花火' (fuegos artificiales
+        que se marchitan bellamente en la ciudad) simboliza la fugacidad de la vida y la
+        belleza que se desvanece. Estas imágenes poéticas refuerzan la idea de que, a
+        pesar de los esfuerzos por encontrar significado, la vida sigue siendo inherentemente
+        transitoria y a menudo decepcionante.
+    </p>     
+        
+    <p>El estribillo de la canción ('教えて 教えて!') es un grito desesperado por respuestas
+        y comprensión. El narrador se siente perdido y busca desesperadamente una guía o una
+        verdad que pueda darle sentido a su sufrimiento. La repetición de esta súplica enfatiza
+        la intensidad de su necesidad de encontrar una razón para seguir adelante. Además, la
+        canción aborda temas de autoengaño y la lucha por la autenticidad, como se refleja en
+        la línea '自惚れた自我を歌ってしまう' (canto mi ego engreído). Ado, conocida por su estilo
+        vocal poderoso y emotivo, logra transmitir estas emociones de manera visceral, haciendo
+        que la canción resuene profundamente con aquellos que han experimentado sentimientos similares.
+    </p>
+    </div>
+
+</body>
+
+</html>

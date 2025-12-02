@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IBARA</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/I1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: rgb(1, 0, 67);
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>IBARA</h1>
+    
+    <video width="560" controls>
+        <source src="../Videos/Ibara.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+        
+    <p> La canción 'Ibara' de Ado es una pieza lírica que explora el dolor y el
+        despertar a través de metáforas y simbolismos profundos. La palabra 'ibara'
+        se traduce como 'espina' en japonés, y esta espina se convierte en un
+        símbolo central en la canción, representando tanto el dolor como la
+        esperanza de un nuevo comienzo. A lo largo de la letra, Ado implora que
+        sus deseos sean cumplidos a través de este dolor, sugiriendo que solo a
+        través del sufrimiento y las heridas se puede alcanzar una verdadera
+        claridad y despertar.
+    </p>
+        
+    <p> El tema del sueño y el despertar es recurrente en la canción. Ado habla
+        de un 'sueño superficial' que necesita ser interrumpido por las espinas
+        del dolor. Este sueño puede interpretarse como una metáfora de la
+        complacencia o la ignorancia, y las espinas representan las experiencias
+        dolorosas que nos sacan de ese estado y nos obligan a enfrentar la realidad.
+        La letra sugiere que este proceso, aunque doloroso, es necesario para ver
+        la 'mañana' o el nuevo comienzo con mayor claridad.
+    </p>
+    
+    <p> Ado también aborda la idea de la derrota y la vulnerabilidad. La canción
+        menciona varias veces la 'derrota' del oyente, pero no en un sentido
+        negativo, sino como una aceptación de la vulnerabilidad humana. Esta
+        aceptación es vista como un paso crucial hacia el crecimiento y la renovación.
+        La letra finaliza con una nota de esperanza, asegurando que las heridas
+        sanarán y que la mañana llegará, iluminando el futuro con una luz nueva y
+        más brillante. Este mensaje de esperanza y renovación a través del dolor es
+        un tema recurrente en la obra de Ado, quien a menudo utiliza su música para
+        explorar emociones complejas y profundas.
+    </p>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EPISODEX</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/EX2.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: rgb(19, 0, 76);
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EPISODE X</h1>
+
+    <video width="560" controls>
+        <source src="../Videos/Episode_X.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+    <p> La canción "Episode X" de Ado es una poderosa declaración de resiliencia
+        y determinación frente a las adversidades. Desde el inicio, la letra nos
+        sumerge en un mundo donde la esperanza puede ser cruel y las posibilidades
+        siempre están acompañadas de la sombra de la imposibilidad. Esta dualidad
+        refleja la lucha interna del ser humano, donde el miedo y la inseguridad
+        intentan arraigarse, pero son enfrentados con valentía y decisión.
+    </p>
+    
+    <p> A lo largo de la canción, Ado utiliza metáforas visuales y emocionales para
+        describir un viaje de autodescubrimiento y superación. La repetición de
+        frases como "Falling down" y "Breaking down" simboliza los momentos de crisis,
+        mientras que "coming back" y "show you now" representan el renacimiento y la
+        fuerza renovada. La letra sugiere que, aunque las heridas del pasado pueden
+        dejar cicatrices, estas se convierten en recordatorios de la capacidad de
+        sanar y seguir adelante.
+    </p>
+    
+    <p> El mensaje central de "Episode X" es que, a pesar de los desafíos y las derrotas,
+        siempre hay una oportunidad para levantarse y luchar nuevamente. La canción enfatiza
+        la importancia de las palabras de aliento y el apoyo de los seres queridos, que actúan
+        como un faro en tiempos de oscuridad. Ado transmite que, con determinación y el poder
+        de la conexión humana, es posible enfrentar cualquier obstáculo y alcanzar un futuro
+        único y compartido.
+    </p>
+    </div>
+    
+</body>
+
+</html>

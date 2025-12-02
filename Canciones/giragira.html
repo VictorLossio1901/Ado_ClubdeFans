@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GIRAGIRA</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/GG1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: #ffffff;
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(0, 0, 0),
+            0px 0px 20px rgb(0, 0, 0),
+            0px 0px 30px rgb(0, 0, 0);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GIRA GIRA</h1>
+
+    <video width="560" controls>
+        <source src="../Videos/Gira_Gira.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+    <p> La canción 'Gira Gira' interpretada por Ado, una artista japonesa
+        conocida por su voz única y su estilo musical que a menudo mezcla
+        elementos de J-Pop con otros géneros, es una pieza que parece explorar
+        temas de autoaceptación y la lucha interna con la propia identidad.
+        La letra sugiere una reflexión sobre cómo la sociedad y sus estándares
+        pueden afectar la percepción de uno mismo, especialmente en términos
+        de belleza y amor propio. La mención de que 'Dios dibujó su cara con
+        la mano izquierda' podría interpretarse como una expresión de sentirse
+        imperfecto o no a la altura de los ideales convencionales.
+    </p>
+    
+    <p> La canción también aborda la idea de que las canciones de amor no parecen
+        estar hechas para ella, lo que podría reflejar un sentimiento de alienación
+        o de no encajar en las narrativas románticas tradicionales. Sin embargo, a
+        pesar de estos sentimientos, la protagonista de la canción decide 'brillar'
+        y 'beber la noche', lo que sugiere una actitud de desafío y la decisión de
+        vivir con intensidad y autenticidad, a pesar de las inseguridades y el
+        juicio de los demás.
+    </p>
+      
+    <p> El uso de metáforas como 'una flor de fuegos artificiales de un miligramo'
+        y 'la noche como un lobo' añade una capa de complejidad a la canción,
+        indicando momentos efímeros de belleza y una naturaleza salvaje e indomable.
+        'Gira Gira' parece ser un himno a la individualidad y a encontrar la propia
+        luz en un mundo que a menudo puede parecer extraño y hostil.
+    </p>
+    </div>
+    
+</body>
+
+</html>

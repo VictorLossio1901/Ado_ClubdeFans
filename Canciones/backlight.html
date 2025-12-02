@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BACKLIGHT</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/B1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: rgb(140, 35, 35);
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BACKLIGHT</h1>
+
+    <video width="560" controls>
+        <source src="../Videos/Backlight.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+    
+    <p> La canción '逆光 (backlight)' interpretada por Ado, una artista japonesa
+        conocida por su estilo musical que a menudo combina elementos de J-Pop
+        con influencias de rock y electrónica, presenta una letra intensa y emocional
+        que parece explorar temas de dolor, superación y resiliencia. La repetición
+        de frases que hablan de no sentir más sueño o tristeza sugiere una narrativa
+        de empoderamiento y liberación de emociones negativas.
+    </p>    
+        
+    <p> La letra menciona 'pensamientos desagradables' y 'resentimientos inútiles', lo
+        que podría interpretarse como un reflejo de experiencias pasadas que han dejado
+        cicatrices emocionales. La canción parece hacer hincapié en la idea de dejar
+        atrás esos sentimientos negativos y enfrentar la ira con una actitud de desafío.
+        La mención de 'castigo con amor' podría simbolizar la lucha interna y la aceptación
+        necesaria para superar el dolor y crecer a partir de él.
+    </p>    
+        
+    <p> El título '逆光 (backlight)' o 'contraluz' en español, sugiere la idea de enfrentarse
+        a una fuente de luz tan intensa que puede cegar o eclipsar todo lo demás. Esto puede
+        ser una metáfora de enfrentar los desafíos de frente, con la luz simbolizando la verdad
+        o la revelación que viene después de superar la oscuridad del pasado. La canción, por
+        lo tanto, puede ser vista como un himno a la fortaleza personal y la capacidad deç
+        transformar el dolor en algo hermoso y poderoso.
+    </p>
+</div>
+
+</body>
+
+</html>

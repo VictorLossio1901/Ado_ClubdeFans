@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SHOW</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/SH1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: rgb(111, 95, 2);
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SHOW</h1>
+
+    <video width="560" controls>
+        <source src="../Videos/Show.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+    <p> La canción '唱 (Show)' interpretada por Ado, una artista japonesa
+        conocida por su energía y estilo único, es una explosión de autoexpresión
+        y desafío a las normas establecidas. La letra, repleta de juegos de
+        palabras y referencias culturales, presenta un despliegue de confianza
+        y la necesidad de ser escuchado en un mundo saturado de ruido y distracciones.
+    </p>
+        
+    <p> El coro 'Ready for my show' actúa como un llamado a la acción, invitando
+        a los oyentes a prepararse para una actuación que promete ser inolvidable.
+        La repetición de 'ナーナーナーナー' (na-na-na-na) sugiere una melodía
+        pegajosa que se queda en la mente, simbolizando la persistencia del
+        artista en el mundo del espectáculo. Ado juega con la idea de estar en
+        el centro de atención, mostrando su talento y su capacidad para cautivar
+        al público. La canción también toca temas de autenticidad y la lucha por
+        mantener la individualidad en una industria que a menudo favorece la conformidad.
+    </p>
+    
+    <p> La energía de la canción es contagiosa, con un ritmo que incita al movimiento
+        y una actitud desafiante que anima a los oyentes a tomar el control de su propio
+        'show'. La letra sugiere que, a pesar de las expectativas y las presiones externas,
+        uno debe permanecer fiel a sí mismo y expresarse libremente. '唱 (Show)' es un
+        himno para aquellos que desean destacar y ser recordados, no solo en el escenario,
+        sino en todos los aspectos de la vida.
+    </p>
+    </div>
+    
+</body>
+
+</html>

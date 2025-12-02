@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ado – Página</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>BIENVENIDOS AL CLUB DE FANS DE ADO</h1>
+
+    <!-- Texto con cuadro -->
+    <div class="cuadro">
+        <p>Esta página está creada por el club 
+            de fans de ADO, donde vemos su 
+            historia, sus logros, sus mejores 
+            canciones con el significado detrás 
+            de ellas; y si ya eres fan de ADO, 
+            tienes un formulario para unirte al club.
+        </p>
+    </div>
+
+    <!-- MENÚ DE ENLACES -->
+    <div class="menu">
+
+        <div class="link-box box4">
+            <a href="historia.html">Historia</a>
+        </div>
+        
+        <div class="link-box box2">
+            <a href="colaboraciones.html">Colaboraciones</a>
+        </div>
+        
+        <div class="link-box box1">
+            <a href="premios.html">Premios</a>
+        </div>
+
+        <div class="link-box box1">
+            <a href="canciones.html">Canciones</a>
+        </div>
+        
+        <div class="link-box box3">
+            <a href="conciertos.html">Conciertos</a>
+        </div>
+        
+        <div class="link-box box5">
+            <a href="formulario.html">Formulario</a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER CON CUADRO DE COLOR E IMAGEN -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="images/Miyabi.jpg" alt="Imagen decorativa" class="footer-img">
+
+            <div class="footer-text">
+                <p>Página web creada por Victor Lossio.  
+                Todos los derechos reservados.  
+                Copyright © 2025 Victor Lossio.</p>
+
+                <p><a href="tu_cv.pdf" target="_blank">Ver mi CV</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const sonido = new Audio("GYARU.mp3");
+
+        document.addEventListener("click", () => {
+            sonido.currentTime = 0;
+            sonido.play();
+        });
+
+        document.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+
+                const destino = link.getAttribute("href");
+
+                sonido.currentTime = 0;
+                sonido.play();
+
+                setTimeout(() => {
+                    window.location.href = destino;
+                }, 750); 
+            });
+        });
+
+    });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-image: url(images/FONDOS/WALLPAPER.jpg);
+    background-size: cover;
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    margin: 20px auto 0 auto;
+
+    /* BORDE */
+    border: 4px solid rgb(53, 0, 188);
+    border-radius: 12px;
+    padding: 15px 25px;
+    display: inline-block;
+
+    /* SOMBREADO MÁS GRANDE */
+    text-shadow: 0 0 30px rgb(2, 0, 54), 0 0 60px rgb(3, 0, 48);
+
+    /* Fondo suave */
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Contenedor del título arriba centrado */
+.titulo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;  
+    margin-bottom: 30px;
+}
+
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+}
+
+/* CUADRO OSCURO TRANSPARENTE */
+.marco {
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 14px;
+    padding: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Levitación al pasar mouse */
+.marco:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+/* Tarjeta (imagen) */
+.tarjeta {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Texto */
+.titulo {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+}

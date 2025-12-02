@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>USSEWA</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/UF1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: #001131;
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>USSEWA</h1>
+
+    <video width="560" controls>
+        <source src="../Videos/Ussewa.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+        <p> La canción 'Usseewa' de Ado, una artista japonesa conocida por su
+            potente voz y estilo musical que abarca desde el pop hasta el rock,
+            es un himno de rebeldía y crítica social. La letra de la canción
+            refleja la frustración de una persona que se siente atrapada en las
+            expectativas y normas impuestas por la sociedad. Desde una perspectiva
+            crítica, la canción desafía la idea de lo que se considera 'correcto'
+            y 'estúpido', y se burla de la conformidad y la superficialidad.
+        </p>
+
+        <p> El estribillo 'Usseewa' que se repite a lo largo de la canción, es una
+            expresión coloquial japonesa que se traduce aproximadamente como 'cállate'
+            o 'déjame en paz'. Este grito simboliza el deseo de romper con las
+            restricciones y vivir de acuerdo con las propias reglas y deseos. La
+            canción también aborda la presión de tener que mantener una fachada de éxito
+            y normalidad, mientras que internamente se siente una desconexión y un
+            deseo de algo más auténtico y satisfactorio.
+        </p>
+
+        <p> Ado utiliza metáforas como 'pensamientos afilados como cuchillos' y
+            'palabras como cañones' para ilustrar la lucha interna y la agresión reprimida
+            contra las expectativas sociales. La canción se convierte en un himno para
+            aquellos que se sienten marginados o incomprendidos por la sociedad, y ofrece
+            una voz a quienes buscan afirmar su individualidad frente a la conformidad.
+        </p>
+    </div>
+
+</body>
+
+</html>

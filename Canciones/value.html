@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VALUE</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/V1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: rgb(2, 9, 142);
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>VALUE</h1>
+
+    <video width="560" controls>
+        <source src="../Videos/Value.mp4" type="video/mp4">
+    </video>
+    <div class="texto">
+
+    <p> La canción 'Value' de Ado, una artista japonesa conocida por su
+        versatilidad vocal y su capacidad para abordar temas profundos
+        en sus letras, parece explorar la lucha interna por encontrar el
+        verdadero valor personal en un mundo lleno de expectativas y
+        falsedades. La letra sugiere una reflexión sobre la autenticidad
+        y el precio de la libertad, donde el 'yo' lírico se enfrenta a la
+        disonancia entre lo que se presenta al mundo y lo que realmente se
+        siente por dentro.
+    </p>        
+        
+    <p> El tema de la canción se centra en la idea de que las memorias y las
+        percepciones pueden estar basadas en mentiras, y que la búsqueda de un
+        amor o una recompensa 'adecuada' puede llevar a sacrificar la libertad
+        personal. La repetición de 'value, value' enfatiza la obsesión por
+        encontrar el valor en uno mismo o en las cosas, mientras que la mención
+        de 'like you, like you' podría interpretarse como una comparación con
+        otra persona o con un ideal inalcanzable. La canción transmite una
+        sensación de desesperación y deseo de ser liberado de las expectativas
+        y de encontrar un sentido de valor genuino.
+    </p>    
+        
+    <p> Musicalmente, Ado es conocida por su estilo ecléctico que a menudo mezcla
+        elementos de J-Pop con otros géneros. Esto puede añadir una capa de
+        complejidad a la interpretación de la canción, ya que la música puede
+        contrastar o complementar los temas líricos de lucha y autodescubrimiento.
+    </p>
+    
+</body>
+
+</html>

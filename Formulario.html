@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Formulario de inscripción - Ado</title>
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        /* Fondo: usa la imagen Hist4.jpg en la carpeta ../images/FONDOS/ */
+        body {
+            background: url('../images/FONDOS/Hist4.jpg') center/cover;
+            color: #111;
+            margin: 0;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor translúcido (glassmorphism) */
+        .card {
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+            width: 100%;
+            max-width: 760px;
+            padding: 28px;
+        }
+
+        /* Título grande con borde y sombra */
+        h1 {
+            margin: 0 0 16px;
+            font-size: 36px;
+            font-weight: 800;
+            text-align: center;
+            background: #ffffffaa;
+            padding: 12px 18px;
+            border-radius: 12px;
+            border: 2px solid #0ea5a4;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        p.lead {
+            margin: 0 0 18px;
+            color: #4b5563;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .field {
+            margin-bottom: 14px;
+            flex: 1 1 240px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        input[type=text],
+        input[type=date],
+        input[type=email],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e6e9ef;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 8px;
+        }
+
+        .small-note {
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 12px;
+        }
+
+        button {
+            background: #0ea5a4;
+            border: none;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border: 1px solid #e6e9ef;
+            color: #111;
+        }
+
+        .success {
+            background: #ecfdf5;
+            color: #065f46;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 12px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+  <main class="card">
+    <h1>Formulario de inscripción</h1>
+    <p class="lead">Rellena tus datos para unirte a la comunidad Ado.</p>
+
+    <form id="adoForm">
+      <div class="row">
+        <!-- Nombre -->
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. María García" required />
+        </div>
+
+        <!-- DNI / NIE -->
+        <div class="field">
+          <label for="dni">DNI / NIE</label>
+          <input type="text" id="dni" name="dni" placeholder="Ej. 12345678A o X1234567B"
+                 pattern="^[XYZxyz]?\\d{7,8}[A-Za-z]$"
+                 title="Formato DNI (8 cifras + letra) o NIE (X/Y/Z + 7/8 cifras + letra)" required />
+          <div class="small-note">Introduce tu número de identificación sin espacios.</div>
+        </div>
+
+        <!-- Fecha de nacimiento -->
+        <div class="field">
+          <label for="nacimiento">Fecha de nacimiento</label>
+          <input type="date" id="nacimiento" name="nacimiento" required />
+        </div>
+      </div>
+
+      <!-- ¿Cómo conociste? (una sola) -->
+      <div class="field">
+        <label>¿Cómo conociste a Ado? (elige solo una)</label>
+        <div class="checkbox-grid">
+          <label><input type="radio" name="conocio" value="YouTube" required> YouTube</label>
+          <label><input type="radio" name="conocio" value="TikTok"> TikTok</label>
+          <label><input type="radio" name="conocio" value="Spotify"> Spotify</label>
+          <label><input type="radio" name="conocio" value="Crunchyroll"> Crunchyroll</label>
+        </div>
+      </div>
+
+      <!-- Canciones (múltiple, 10 opciones) -->
+      <div class="field">
+        <label>¿Qué canción te gusta de Ado? (puedes seleccionar varias)</label>
+        <div class="checkbox-grid">
+          <label><input type="checkbox" name="cancion" value="Usseewa"> Usseewa</label>
+          <label><input type="checkbox" name="cancion" value="Gira Gira"> Gira Gira</label>
+          <label><input type="checkbox" name="cancion" value="Odo"> Odo</label>
+          <label><input type="checkbox" name="cancion" value="Show"> Show</label>
+          <label><input type="checkbox" name="cancion" value="Im Controversy"> Im Controversy</label>
+          <label><input type="checkbox" name="cancion" value="Value"> Value</label>
+          <label><input type="checkbox" name="cancion" value="EpisodeX"> EpisodeX</label>
+          <label><input type="checkbox" name="cancion" value="Shoka"> Shoka</label>
+          <label><input type="checkbox" name="cancion" value="New Genesis"> New Genesis</label>
+          <label><input type="checkbox" name="cancion" value="Backlight"> Backlight</label>
+        </div>
+      </div>
+
+      <!-- Texto libre -->
+      <div class="field">
+        <label for="gusta">Dinos todo lo que te gusta de Ado</label>
+        <textarea id="gusta" name="gusta" rows="5" placeholder="Cuenta qué te gusta: vídeos, estilo, música, comunidad..." required></textarea>
+      </div>
+
+      <!-- Compromiso sí/no -->
+      <div class="field">
+        <label>¿Estarás al día en nuestras redes sociales, atento para salidas con el club y rezarle cada día a nuestra reina?</label>
+        <label><input type="radio" name="compromiso" value="si" required> Sí</label>
+        <label><input type="radio" name="compromiso" value="no"> No</label>
+      </div>
+
+      <div class="actions">
+        <button type="submit">Enviar</button>
+        <button type="reset" class="btn-ghost">Limpiar</button>
+      </div>
+
+      <div id="msg" class="success" role="status"></div>
+    </form>
+  </main>
+
+  <script>
+    // Establece la fecha máxima del selector de fecha (hoy)
+    (function(){
+      const hoy = new Date();
+      const yyyy = hoy.getFullYear();
+      const mm = String(hoy.getMonth()+1).padStart(2,'0');
+      const dd = String(hoy.getDate()).padStart(2,'0');
+      const el = document.getElementById('nacimiento');
+      if (el) el.setAttribute('max', `${yyyy}-${mm}-${dd}`);
+    })();
+
+    // Manejo del envío: evita recargar y muestra resumen (aquí podrías enviar a un servidor)
+    document.getElementById('adoForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+
+      // Obtener 'conocio' (radio - único valor)
+      const conocio = data.get('conocio'); // devuelve string o null
+
+      // Recoger checkboxes múltiples 'cancion'
+      const canciones = [];
+      for (const [key, value] of data.entries()){
+        if (key === 'cancion') canciones.push(value);
+      }
+
+      const payload = {
+        nombre: data.get('nombre'),
+        dni: data.get('dni'),
+        nacimiento: data.get('nacimiento'),
+        conociste_por: conocio,
+        canciones_favoritas: canciones,
+        gusta: data.get('gusta'),
+        compromiso: data.get('compromiso')
+      };
+
+      // Aquí normalmente harías fetch('/tu-api', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)})
+      console.log('Datos del formulario:', payload);
+
+      const msg = document.getElementById('msg');
+      msg.textContent = '¡Gracias! Tu inscripción se ha recibido correctamente.';
+      msg.style.display = 'block';
+
+      // opcional: limpiar formulario tras enviar
+      form.reset();
+    });
+  </script>
+</body>
+</html>

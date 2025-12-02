@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IMCONTROVERSY</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/IC1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: rgb(160, 102, 0);
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>IM CONTROVERSY</h1>
+    
+    <video width="560" controls>
+        <source src="../Videos/Im_Controversy.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+
+    <p> La canción 'I'm a Controversy' de Ado explora la complejidad de la
+        autoimagen y la percepción pública. A través de una letra cargada
+        de ironía y autocrítica, Ado se pregunta repetidamente si es una
+        'problemática', reflejando la lucha interna entre cómo se ve a sí
+        misma y cómo es percibida por los demás. La repetición de la pregunta
+        'アタシは問題作?' (¿Soy una problemática?) sugiere una búsqueda
+        constante de validación y una lucha con la identidad.
+    </p>
+
+    <p> En la letra, Ado menciona sentirse sobrevalorada y no poder expresar
+        sus verdaderos sentimientos, lo que le causa una especie de 'acidez
+        estomacal' emocional. Este sentimiento de no poder ser auténtica se
+        contrapone con la idea de vivir una vida 'normal' y cometer errores
+        'normales'. La canción también aborda la crítica y el juicio de los
+        demás, representados por el 'spotlight' que revela sus sombras y la
+        'defensa instintiva' que la hace reír por miedo. Ado agradece
+        irónicamente a sus críticos, mostrando una mezcla de resentimiento y
+        aceptación.
+    </p>
+
+    <p> La canción también toca temas de vulnerabilidad y la lucha por la
+        autoaceptación. Ado se disculpa por ser 'normalmente débil' y por
+        no cumplir con las expectativas de los demás. La letra sugiere que,
+        a pesar de no ser una 'buena persona', tampoco es tan mala como otros
+        podrían pensar. Esta dualidad se refleja en la línea '善でしょ 悪でしょ'
+        (¿Bueno o malo?), indicando que la percepción es subjetiva y que cada
+        persona tiene múltiples facetas. La canción concluye con una aceptación 
+        resignada de su identidad, preguntando retóricamente a los oyentes si
+        ellos también son 'problemáticos'.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canciones de Ado</title>
+    <link rel="stylesheet" href="stylesCanciones.css">
+</head>
+<body>
+
+    <div class="titulo-container">
+        <h1>Canciones de Ado</h1>
+    </div>
+
+    <div class="grid-contenedor">
+
+        <a href="canciones/ussewa.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/Usewwa.jpeg');"></div>
+            <p class="titulo">Ussewa</p>
+        </a>
+
+        <a href="canciones/giragira.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/GiraGira.jpeg');"></div>
+            <p class="titulo">Gira Gira</p>
+        </a>
+
+        <a href="canciones/odo.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/Odo.jpeg');"></div>
+            <p class="titulo">Odo</p>
+        </a>
+
+        <a href="canciones/show.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/ShowAdo.jpg');"></div>
+            <p class="titulo">Show</p>
+        </a>
+
+        <a href="canciones/rebellion.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/Rebellion.jpeg');"></div>
+            <p class="titulo">Rebellion</p>
+        </a>
+
+        <a href="canciones/imcontroversy.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/ImControversy.jpeg');"></div>
+            <p class="titulo">I'm Controversy</p>
+        </a>
+
+        <a href="canciones/newgenesis.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/NewGenesis.jpeg');"></div>
+            <p class="titulo">New Genesis</p>
+        </a>
+
+        <a href="canciones/ibara.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/Ibara.jpeg');"></div>
+            <p class="titulo">Ibara</p>
+        </a>
+
+        <a href="canciones/shoka.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/Shoka.jpeg');"></div>
+            <p class="titulo">Shoka</p>
+        </a>
+
+        <a href="canciones/episodex.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/EpisodeX.jpeg');"></div>
+            <p class="titulo">Episode X</p>
+        </a>
+
+        <a href="canciones/backlight.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/Backlight.jpeg');"></div>
+            <p class="titulo">Backlight</p>
+        </a>
+
+        <a href="canciones/value.html" class="marco">
+            <div class="tarjeta" style="background-image:url('images/CANCIONES/Value.jpeg');"></div>
+            <p class="titulo">Value</p>
+        </a>
+
+    </div>
+
+    <!-- SONIDO + DELAY -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const sonido = new Audio("GYARU.mp3");
+
+            document.querySelectorAll("a, .marco, .tarjeta").forEach(el => {
+
+                el.addEventListener("click", (event) => {
+
+                    sonido.currentTime = 0;
+                    sonido.play();
+
+                    if (el.tagName === "A") {
+
+                        event.preventDefault();
+                        const destino = el.href;
+
+                        setTimeout(() => {
+                            window.location.href = destino;
+                        }, 750); // 0.75 segundos
+
+                    }
+
+                });
+            });
+
+        });
+    </script>
+
+</body>
+</html>

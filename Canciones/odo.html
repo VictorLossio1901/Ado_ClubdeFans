@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ODO</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-image: url('../images/cancionesfondos/OD1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: #010939;
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 30px;
+            
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),
+            0px 0px 20px rgb(255, 255, 255),
+            0px 0px 30px rgb(255, 255, 255);
+        }
+
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            animation: slideFromLeft 1.2s ease-out;
+            box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        }
+
+        .texto {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 0px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ODO</h1>
+    
+    <video width="560" controls>
+        <source src="../Videos/Odo.mp4" type="video/mp4">
+    </video>
+
+    <div class="texto">
+    <p> La canción 'Odo (踊)', interpretada por la artista japonesa Ado, es un
+        torbellino de emociones y energía que invita a los oyentes a sumergirse
+        en una experiencia musical intensa. La letra, aunque pueda parecer
+        caótica a primera vista, refleja una serie de sentimientos y estados
+        de ánimo que van desde la soledad hasta la euforia colectiva, pasando
+        por la aceptación del dolor y la superación personal.
+    </p>
+        
+    <p> El estribillo 'はんぱならk.o ふわふわしたいならどうぞ' puede interpretarse
+        como una invitación a dejarse llevar, a no quedarse a medias y a
+        disfrutar plenamente, ya sea en la soledad o en compañía. La canción
+        parece abogar por la expresión libre de las emociones, ya sea riendo o
+        llorando, y por encontrar consuelo en la conexión con los demás.
+        'つながろうひとりよりふたりふえたらあんしんしんぱいないや' sugiere que
+        la unión con otros puede aliviar la ansiedad y proporcionar seguridad.
+    </p>    
+        
+    <p> Ado, conocida por su estilo musical que a menudo mezcla elementos de pop,
+        rock y electrónica, utiliza su voz distintiva para transmitir un mensaje
+        de resistencia y fortaleza. La canción 'Odo (踊)' se convierte en un himno
+        para aquellos que buscan liberarse de sus propias restricciones y encontrar
+        alegría en la música y el baile, incluso cuando se enfrentan a desafíos
+        emocionales. La repetición de 'woah woah' y la referencia a una
+        'あんてんぱーてぃー' (fiesta de antena) refuerzan la idea de una celebración
+        que trasciende las barreras físicas y emocionales.
+    </p>
+    </div>
+    
+</body>
+
+</html>
